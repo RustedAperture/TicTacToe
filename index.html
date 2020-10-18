@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Walnuts' Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="CSS\walnutcss.css">
+        <link rel="stylesheet" href="CSS\tttcss.css">
+        <script src="JS\ttt.js"></script>
+    </head>
+    <body class="bg-light">
+        <div class="flexwrap-col">
+            <article class="padding">
+                <h1>Tic-Tac-Toe</h1>
+            </article>
+            <div class="flexwrap-nowrap" id="ttt_container">
+                <div class="grid padding" id="ttt_board">
+                    <button class="ttt btn-outline-dark" id="ttt_11" onclick="ttt_doMove(1,1)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_12" onclick="ttt_doMove(1,2)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_13" onclick="ttt_doMove(1,3)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_21" onclick="ttt_doMove(2,1)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_22" onclick="ttt_doMove(2,2)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_23" onclick="ttt_doMove(2,3)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_31" onclick="ttt_doMove(3,1)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_32" onclick="ttt_doMove(3,2)"></button>
+                    <button class="ttt btn-outline-dark" id="ttt_33" onclick="ttt_doMove(3,3)"></button>
+                </div>
+                <div class="flexwrap-col" id="ttt_right">
+                    <div id="controls" class="padding">
+                        <button id="newgame" class="btn" onclick="ttt_clearBoard()">New game</button>
+                    </div>
+                    <div id="score" class="padding">
+                        <p>Starting Player : <span id="starting_player">X</span></p>
+                        <p>Player X : <span id="playerX">0</span></p>
+                        <p>Player Y : <span id="playerY">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

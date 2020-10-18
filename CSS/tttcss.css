@@ -1,0 +1,49 @@
+#ttt_container, #ttt_right {
+    justify-content: flex-start;
+}
+
+#ttt_board {
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-rows: 5rem 5rem 5rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+button.ttt {
+    width: 5rem;
+    height: 5rem;
+}
+
+button.ttt:hover {
+    border: 2px solid #78e1ec;
+    color: #20ccde;
+}
+
+#ttt_11 {
+    grid-area: 1/1;
+}
+#ttt_12 {
+    grid-area: 1/2;
+}
+#ttt_13 {
+    grid-area: 1/3;
+}
+#ttt_21 {
+    grid-area: 2/1;
+}
+#ttt_22 {
+    grid-area: 2/2;
+}
+#ttt_23 {
+    grid-area: 2/3;
+}
+#ttt_31 {
+    grid-area: 3/1;
+}
+#ttt_32 {
+    grid-area: 3/2;
+}
+#ttt_33 {
+    grid-area: 3/3;
+}
